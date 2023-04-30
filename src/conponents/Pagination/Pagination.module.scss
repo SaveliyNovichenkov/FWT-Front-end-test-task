@@ -1,0 +1,141 @@
+.pages {
+  display: flex;
+  position: relative;
+  left: 120px;
+  .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+  }
+  .back__btn__two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .back__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .forward__btn__two {
+    rotate: 180deg;
+    svg * {
+      fill-opacity: 1;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .forward__btn {
+    rotate: 180deg;
+    svg * {
+      fill-opacity: 1;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+}
+
+.forward__light {
+  background-color: var(--bg-color-light);
+  border: 1px solid var(--bg-color-dark);
+  svg * {
+    fill: var(--color-light);
+    fill-opacity: 1;
+  }
+}
+
+.forward__dark {
+  background-color: var(--bg-color-dark);
+  border: 1px solid var(--color-dark);
+}
+
+.dark__back__btn {
+  background-color: var(--bg-color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.light__back__btn {
+  background-color: var(--bg-color-light);
+  border: 1px solid var(--bg-color-dark);
+  svg * {
+    fill: var(--color-light);
+    fill-opacity: 1;
+  }
+}
+
+.currentPageDark {
+  color: var(--color-dark);
+  background-color: var(--bg-color-dark);
+  border: 1px solid var(--bg-color-dark);
+}
+
+.currentPageLight {
+  color: var(--color-light);
+  background-color: var(--bg-color-light);
+  border: 1px solid var(--bg-color-light);
+}
+
+
+.dark {
+  color: var(--color-dark);
+  background-color: var(--bg-color-dark);
+  border: 1px solid var(--color-dark);
+}
+
+.light {
+  color: var(--color-light);
+  background-color: var(--bg-color-light);
+  border: 1px solid var(--color-light);
+}
+
+
+@media (max-width: 1366px) {
+  .pages {
+    display: flex;
+    position: relative;
+    left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pages {
+    display: flex;
+    padding-left: 30px;
+    bottom: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .pages {
+    display: flex;
+    padding-left: 12px;
+    bottom: 0;
+  }
+}
+
+

@@ -1,0 +1,78 @@
+.layout {
+    display: grid;
+    position: relative;
+    gap: 40px 30px;
+    width: 1366px;
+    height: 1560px;
+    margin: 0 auto;
+    .main {
+        background-color: inherit;
+        color: inherit;
+        margin: 0 50px 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+.dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.light {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+@media (max-width: 2500px) {
+
+}
+
+@media (max-width: 1366px) {
+    .layout {
+        display: grid;
+        position: relative;
+        gap: 40px 30px;
+        width: 940px;
+        height: 1vh;
+        margin: 0 auto;
+        .main {
+            margin: 0 auto;
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .layout {
+        display: grid;
+        position: relative;
+        gap: 40px 30px;
+        width: 768px;
+        height: 1vh;
+        margin: 0 auto;
+        .main {
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .layout {
+        display: grid;
+        position: relative;
+        gap: 40px 20px;
+        width: 320px;
+        height: 1vh;
+        margin: 0 auto;
+        .main {
+            margin: 0 auto;
+        }
+    }
+}
+

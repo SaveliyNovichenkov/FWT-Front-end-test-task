@@ -1,0 +1,158 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  height: 200px;
+  .them__change {
+    position: absolute;
+    top: 57px;
+    right: 110px;
+  }
+  > form {
+    display: grid;
+    grid-template-columns: 265px 265px 265px 265px;
+    gap: 0 20px;
+    position: relative;
+    top: 80%;
+    left: 9%;
+    .form__item {
+      width: 265px;
+      height: 45px;
+      border-radius: 8px;
+    }
+    > select {
+      width: 100%;
+      height: 100%;
+      > option {
+
+      }
+      .default__option {
+        opacity: 0.3;
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.logo__icon {
+  position: absolute;
+  top: 35px;
+  left: 123px;
+}
+
+.dark_logo * {
+}
+.light_logo * {
+  fill: var(--color-dark)
+}
+
+.dark_svg * {
+  fill: var(--color-dark)
+}
+.light_svg * {
+  fill: var(--color-light)
+}
+
+.dark {
+  color: var(--color-dark);
+  background-color: var(--bg-color-dark);
+}
+.light {
+  color: var(--color-light);
+  background-color: var(--bg-color-light);
+}
+
+
+@media (max-width: 1366px) {
+  .wrapper {
+    position: relative;
+    display: flex;
+    height: 200px;
+    .them__change {
+      right: 0;
+    }
+    .logo__icon {
+      left: 0;
+    }
+
+    > form {
+      display: grid;
+      grid-template-columns: 220px 220px 220px 220px;
+      gap: 0 20px;
+      position: relative;
+      top: 70%;
+      left: 0;
+      .form__item {
+        width: 220px;
+        height: 45px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    position: relative;
+    display: flex;
+    height: 200px;
+    margin: 0 auto;
+    .them__change {
+      right: 0;
+    }
+    .logo__icon {
+      left: 0;
+    }
+
+    > form {
+      display: grid;
+      grid-template-columns: 160px 160px 160px 160px;
+      gap: 0 20px;
+      position: relative;
+      top: 70%;
+      left: 0;
+      .form__item {
+        width: 160px;
+        height: 45px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    position: relative;
+    display: flex;
+    height: 384px;
+    margin: 0 auto;
+    .them__change {
+      right: 0;
+    }
+    .logo__icon {
+      left: 0;
+    }
+
+    > form {
+      display: grid;
+      grid-template-columns: 280px;
+      height: 300px;
+      gap: 4px 0;
+      position: relative;
+      top: 30%;
+      left: 0;
+      .form__item {
+        width: 280px;
+        height: 45px;
+        border-radius: 8px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+
+}
